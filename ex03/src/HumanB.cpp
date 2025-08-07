@@ -6,7 +6,7 @@
 /*   By: barjimen <barjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 20:49:32 by barjimen          #+#    #+#             */
-/*   Updated: 2025/07/24 23:02:22 by barjimen         ###   ########.fr       */
+/*   Updated: 2025/08/07 21:07:43 by barjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,9 @@
 HumanB::HumanB(std::string name) : _name(name)
 {
     std::cout << "HumanB constructor called" << std::endl;
-    //_name = name; Es lo mismo
+    //_name = name; is the same
 }
 
-// HumanB::HumanB(std::string name, Weapon weapon)
-// {
-//     _name = name;
-//     _weapon = weapon;
-// }
 
 HumanB::~HumanB()
 {

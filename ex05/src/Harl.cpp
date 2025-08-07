@@ -6,7 +6,7 @@
 /*   By: barjimen <barjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 19:31:52 by barjimen          #+#    #+#             */
-/*   Updated: 2025/07/30 19:54:05 by barjimen         ###   ########.fr       */
+/*   Updated: 2025/08/07 21:23:37 by barjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Harl::~Harl()
 void Harl::complain( std::string level )
 {
     std::string levels[4] = { "DEBUG", "INFO", "WARNING", "ERROR"};
-    void (Harl:: *functions[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error}; //Esto es un array a los metodos privados
+    void (Harl:: *functions[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error}; //Array to the private methods
     for (int i = 0; i < 4 ; i++)
     {
         if (level == levels[i])
